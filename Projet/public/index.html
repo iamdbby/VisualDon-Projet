@@ -3,11 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <title>DBBYZ'S PROJECT</title>
-    <link rel="shortcut icon" href="../assets/img/favicon.ico">
     <script src="../src/index.js"></script>
+    <script src="../src/chart1.js"></script>
+    <script src="../src/chart2.js"></script>
+    <script src="../src/chart3.js"></script>
+    <script src="../src/message.js"></script>
+    <script src="../src/planets.js"></script>
+    
+    <style>
+        @font-face {
+          font-family: "Raleway";
+          src: url("../assets/Raleway-ExtraBold.ttf") format("truetype");
+        }
+  h1{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+        body {
+          background-color: black;
+          font-family: Raleway;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+  
+     
+        }
+        @media only screen and (min-width: 400px){
+          div{
+            display: block;
+          }
+        }
+        p {
+          font-size: 20px;
+          color: rgba(255, 255, 255);
+        }
+  
+        span.marvel {
+          color: #e15759;
+        }
+  
+        span.dc {
+          color: #4e79a7;
+        }
+  
+        text.Marvel {
+          fill: rgb(226, 46, 46);
+          font-family: Raleway;
+          font-size: 14px;
+        }
+  
+        text.DCComics {
+          fill: rgb(31, 130, 223);
+          font-family: Raleway;
+          font-size: 14px;
+        }
+  
+        rect.dc {
+          fill: #4e79a7;
+          font-weight: bold;
+        }
+  
+        rect.marvel {
+          fill: #e15759;
+          font-weight: bold;
+        }
+  
+  
+        path {
+          stroke: rgb(255, 255, 255);
+        }
+        line {
+          stroke: rgb(255, 255, 255);
+        }
+  
+        .tick text {
+          fill: rgba(255, 255, 255, 0.6);
+        }
+        .planetarium{
+          display: flex;
+          flex-direction:row;
+    
+        }
+        .orbit_marvel {
+          stroke : #ffffff;
+          fill : none;
+        }
+        .planet_marvel {
+          stroke : #000000;
+          fill : #f11919;
+        }
+        .sun_marvel {
+          stroke : #000000;
+          fill : #f10f0f;
+          position: relative; width: 200px; 
+          height: 200px; 
+          overflow: hidden; 
+          border-radius: 50%;
+        }
+  
+        .orbit_dc {
+          stroke : #ffffff;
+          fill : none;
+        }
+        .planet_dc {
+          stroke : #000000;
+          fill : #1977f1;
+        }
+        .sun_dc {
+          stroke : #000000;
+          fill : #0f4bf1;
+          position: relative; width: 200px; 
+          height: 200px; 
+          overflow: hidden; 
+          border-radius: 50%; } 
+  
+          .highlight{
+            fill:darkorchid;
+          }
+          .msg{
+      color:darkorchid;
+      display: flex;
+      margin: 0;
+      font-size: xx-large;
+      padding: 10px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+  
+    h2{
+      color: white;
+    }
+
+      </style>
 </head>
+
+
 <body>
+    <h1><span class="marvel">Marvel</span> vs. <span class="dc">DC</span>DATA VISUALISATION</h1>
    
+    <div id="planetarium_marvel">
+      <img class="sun_dc" src="../img/Marvel_Logo.png" />
+        <p>Marvel prend racine autour de 1960. La guerre est loin derrière, une nouvelle mouvance s’oriente vers la science et la technique. Les gens comprennent qu’il n’est plus nécessaire qu’une superpuissance ou une divinité les protège, et qu’ils sont capables de se défendre eux-mêmes grâce à la technologie. <br>Voilà pourquoi les héros Marvel sont plus :<br>
+          – Modernes <br>
+          – Mieux équipés et ont plus d’expériences</p>
+      <div id="planetarium_marvel"></div>
+        
+      </div>
+
+      <div id="planetarium_dc">
+        <img class="sun_dc" src="../img/DC-Symbole.jpg" />
+        <p>Pour DC Comics, les principaux personnages ont été introduits entre 1935-1945, donc pendant une période de guerre mondiale. À cette époque-là, les gens ne présument pas encore ce que sera l’avancée technologique. <br>
+
+          Les atouts qu’ils souhaitent posséder pour les aider à gagner la guerre :<br>
+          – La magie<br>
+          – La superpuissance<br>
+          – Des héros mythiques, des espions…</p>
+      </div>
+    </div>
+
+
+    <div class="chart1">
+      <p>
+        <span class="marvel">Marvel</span> vs. <span class="dc">DC</span> le nombre de personnages en séparant les 2 univers 
+      </p>
+    </div>
+    <div class="chart2">
+      <p>
+        <span class="marvel">Marvel</span> vs. <span class="dc">DC</span> Ici, on peut voir les genre des différents super-héros.
+        <p>Comme prévu, dans les galaxies Marvel et DC, les femmes sont minoritaires dans la plupart des œuvres. Plus précisément, si l'on exclut les personnages de sexe indéfini, 80% des personnages de Marvel et 72% des personnages de DC présents dans plus de 10 œuvres sont des hommes.</p>
+      </p>
+    </div>
+    <div class="chart3">
+      <p>
+        <span class="marvel">Marvel</span> vs. <span class="dc">DC</span> Un graphique afin de voir quel type de super-héros on a. Plutôt du côté obscur de la force ou du côté du bien ?
+      <p> </p>
+      </p>
+    </div>
+
+    <div >
+      <h2>NOTE FINAL</h2>
+      <p class="msg"> ⇢ Malgré des décénies de combat entre Marvel et DC Comics, Marvel reste THE FIRST !</p>
+
+    </div>
+
+   
+    
 
     
 </html>
